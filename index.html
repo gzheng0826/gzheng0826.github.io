@@ -1,99 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ge Zheng</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Ge Zheng - Home</title>
+  <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="publication.html">Publications</a></li>
-                <li><a href="academic.html">Academic</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Home Page Content -->
-        <section id="home">
-            <h1>Welcome to Dr. Ge Zheng's Website</h1>
-            <img src="ID-card.png" alt="Dr. Ge Zheng" />
-            <p>
-                Research Associate at the Institute of Manufacturing, Department of Engineering, University of Cambridge.
-            </p>
-            <p>Contact Information:</p>
-            <ul>
-                <li>Email: <a href="mailto:gz305@cam.ac.uk">gz305@cam.ac.uk</a></li>
-                <li>Location: University of Cambridge, Alan Reece Building</li>
-                <li>Google Scholar: <a href="#">Link</a></li>
-                <li>GitHub: <a href="#">Link</a></li>
-            </ul>
-        </section>
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="publication.html">Publications</a></li>
+        <li><a href="academic.html">Academic</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Teaching Page Content -->
-        <section id="teaching">
-            <h2>Teaching</h2>
-            <p><strong>Lecturer</strong> (09/2023 - Present):</p>
-            <ul>
-                <li>MET-IIB-5: Data and Decision Science (4th Year Undergraduate Students)</li>
-                <li>ISMM-M3: Data and Modelling (MPhil Students)</li>
-            </ul>
-            <p><strong>Supervisor</strong> (05/2023 - Present):</p>
-            <ul>
-                <li>Supervising MET undergraduate and MPhil students on final projects</li>
-            </ul>
-        </section>
+  <!-- Main Content (Two-Column Layout) -->
+  <main class="home-container">
+    <!-- Left Column -->
+    <div class="left-column">
+      <img src="_images/ID-card.png" alt="Dr. Ge Zheng" class="profile-picture" />
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:gz305@cam.ac.uk">gz305@cam.ac.uk</a></p>
+        <p><strong>Employer:</strong> University of Cambridge, Alan Reece Building</p>
+        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.co.uk/citations?user=oxoSeLEAAAAJ&hl=en">Link</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/gzheng0826">Link</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dr-ge-zheng-78b451223/">Link</a></p>
+      </div>
+    </div>
 
-        <!-- Publications Page Content -->
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>Selected Journal Articles:</p>
-            <ul>
-                <li>Zheng, G., Ivanov, D., Brintrup, A. "Learning to learn: Network formation and clustering for federated machine learning in supply chains." (2024)</li>
-                <li>Zheng, G., Almahri, S., Schoepf, S., Minaricova, M., Brintrup, A. "Large language models for supply chain management: An exploratory study in risk management." (2024)</li>
-                <li>Assemgul, K., Chai, W. K., Zheng, G. "Modeling traffic congestion spreading using a topology-based SIR epidemic model." (2024)</li>
-            </ul>
-            <p>For a full list of publications, see my CV.</p>
-        </section>
+    <!-- Right Column -->
+    <div class="right-column">
+      <section>
+        <h1>Welcome to Dr. Ge Zheng's Website</h1>
+        <p>
+            I am currently a Research Associate (RA) working with Professor Alexandra Brintrup, 
+            who leads the Supply Chain Artificial Intelligence Lab <a href="https://www.ifm.eng.cam.ac.uk/research/supply-chain-ai-lab/">(SCAIL)</a> at the Institute for Manufacturing <a href="https://www.ifm.eng.cam.ac.uk/">(IfM)</a> in the Department of Engineering at the <a href="https://www.cam.ac.uk/">University of Cambridge</a>. 
+            My work focuses on two main initiatives: the COREs project and the Vax project. 
+            The COREs project aims to develop collective learning algorithms—such as Federated Learning (FL)—to enhance Supply Chain Risk Management (SCRM). 
+            This approach allows partners to share valuable insights while preserving privacy and data security. 
+            The Vax project aims to apply artificial intelligence and machine learning techniques to optimise vaccine supply chains, supporting novel vaccine manufacturing technologies and advancing economic and simulation modelling for strategic decision-making.            
+        </p>
 
-        <!-- Academic Page Content -->
-        <section id="academic">
-            <h2>Academic Activities</h2>
-            <p>Recent Events Attended:</p>
-            <ul>
-                <li>AI UK 2024: Demonstrated a demo for the Supply Chain AI Lab.</li>
-                <li>Alan Turing Workshop 2023: Presentation on adaptive federated learning.</li>
-                <li>Digital Manufacturing Week 2022: Attendee.</li>
-                <li>Seminar on Machine Learning in Engineering, Imperial College London (2022).</li>
-            </ul>
-        </section>
+        <p>
+            Before joining Cambridge, I completed my PhD in the Department of Computing and Informatics at the <a href="https://www.bournemouth.ac.uk/">University of Bournemouth</a> under the guidance of Associate Professor Wei Koong Chai and Professor Vasilis Katos. 
+            My doctoral research focused on using deep learning to predict traffic states in urban transport networks. 
+            Prior to my PhD, I earned a Master’s degree in Electronic Engineering at the <a href="https://www.bournemouth.ac.uk/">University of Bournemouth</a>, where I developed a machine learning algorithm for a wearable device to detect falls in older adults.
+        </p>    
+        
+        <p>
+            More broadly, I am passionate about integrating AI-driven solutions into diverse fields—including supply chain management, pattern recognition, intelligent transportation systems, and healthcare—to help streamline operations, mitigate risk, and improve outcomes.
+        </p>    
+        
+        <p>
+          Here, you will find information about my teaching, publications, academic activities, and blog posts related to AI, machine learning, and supply chain research.
+        </p>
+      </section>
+    </div>
+  </main>
 
-        <!-- CV Page Content -->
-        <section id="cv">
-            <h2>Curriculum Vitae</h2>
-            <p>Download my full CV:</p>
-            <a href="Curriculum_Vitae_GeZheng.pdf" download>Download PDF</a>
-        </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dr. Ge Zheng. All rights reserved.</p>
+    <div class="footer-logos">
+        <img src="_images/SCAIL.png" alt="Supply Chain Artificial Intelligence Lab" class="footer-logo-scail">
+        <img src="_images/ifm.png" alt="Institute for Manufacturing" class="footer-logo-ifm">
+        <img src="_images/CamUni.jpg" alt="University of Cambridge" class="footer-logo-cam">
+      </div>
+  </footer>
 
-        <!-- Blog Page Content -->
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Coming soon: Posts sharing knowledge and insights on AI, machine learning, and supply chain research.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Dr. Ge Zheng. All rights reserved.</p>
-    </footer>
 </body>
-
 </html>
