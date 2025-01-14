@@ -1,70 +1,158 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Common reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
+    box-sizing: border-box;
+  }
+  
+  /* Basic body styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #111111;
+    background-color: #93B0AC;
+  }
+  
+  /* Header navigation (example) */
+  header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #93B0AC;
+    
+  }
+  
+  header ul {
     list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+    display: flex;
+    justify-content: center; /* center items horizontally */
+  }
+  
+  header li a {
+    display: block;
+    padding: 1rem;
     text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
     color: #333;
+  }
+  
+  header li a.active {
+    background-color: #93B0AC; /* highlight current page */
+  }
+  
+  /* Default link color */
+  a {
+    color: blue; /* Change to your desired color */
+    text-decoration: none; /* Removes the underline (optional) */
+  }
+
+
+  /* Main container for home page */
+  .home-container {
+    display: flex;            /* use Flexbox for columns */
+    flex-wrap: wrap;          /* allow wrapping on small screens */
+    max-width: 1200px;        /* optional max width */
+    margin: 0 auto;           /* center the container */
+    padding: 1rem;            /* some padding around content */
+    gap: 2rem;                /* spacing between columns */
+  }
+  
+  /* Main container for home page */
+  .page-container {
+    max-width: 800px;        /* optional max width */
+    margin: 0 auto;           /* center the container */
+    padding: 1rem;            /* some padding around content */
+  }
+
+  /* publication page */
+  .paper-title {
+    font-weight: bold;
+    display: block;
+  }
+  .paper-authors, .paper-venue, .paper-year {
+    display: block;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .paper-venue {
+    font-style: italic;
+  }
+
+  /* Left Column */
+  .left-column {
+    flex: 1 1 40%;            /* roughly 25% of the width */
+    min-width: 280px;         /* ensure column is never too narrow */
+    background-color: #f5f5f5;/* optional background */
+    padding: 1rem;
+    text-align: center;       /* center the image and text */
+  }
+  
+  /* Profile picture */
+  .profile-picture {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;       /* make it circular if you like */
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact info styling */
+  .contact-info h2 {
+    margin-bottom: 0.5rem;
+  }
+  .contact-info p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Right Column */
+  .right-column {
+    flex: 1 1 55%;           /* roughly 70% of the width */
+    min-width: 300px;        /* ensure column is never too narrow */
+    padding: 1rem;
+    text-align: justify;
+  }
+  
+section {
+ margin-top: 1em;
+ margin-bottom: 1em;  
+}  
+
+p {
+  margin-bottom: 1em;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+h1 {
+  margin-bottom: 0.5em;
+}
+
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+
+  /* Footer styling (example) */
+  footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+  }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
+  .footer-logos {
+    display: flex;              /* Arrange items in a row */
+    justify-content: center;    /* Center align the logos horizontally */
+    gap: 3rem;                  /* Add space between the logos */
+    margin-top: 1rem;           /* Space above the logo section */
+  }
 
-ul li {
-    margin: 5px 0;
-}
+  .footer-logo-cam {
+    max-width: 250px;           /* Adjust logo size */
+    height: auto;               /* Maintain aspect ratio */
+  }
+  
+  .footer-logo-scail {
+    max-width: 200px;           /* Adjust logo size */
+    height: auto;               /* Maintain aspect ratio */
+  }
 
-img {
-    max-width: 150px;
-    border-radius: 50%;
-}
+  .footer-logo-ifm {
+    max-width: 150px;           /* Adjust logo size */
+    height: auto;               /* Maintain aspect ratio */
+  }
