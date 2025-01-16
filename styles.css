@@ -10,7 +10,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #111111;
-    background-color: #C0C0C0;
+    background-color: #AAB7B8;
   }
   
   /* Header navigation (example) */
@@ -34,7 +34,8 @@
   }
   
   header li a.active {
-    background-color: #C0C0C0 ; /* highlight current page */
+    background-color: #AAB7B8 ; /* highlight current page */
+    font-weight: bold;
   }
   
   /* Default link color */
@@ -43,6 +44,13 @@
     text-decoration: none; /* Removes the underline (optional) */
   }
 
+  /* Navigation Links */
+  .nav-links {
+    font-size: 20px;
+    gap: 20px; /* Space between links */
+    list-style: none; /* Remove bullet points */
+    color: #333;
+  }
 
   /* Main container for home page */
   .home-container {
@@ -56,7 +64,8 @@
   
   /* Main container for home page */
   .page-container {
-    max-width: 900px;        /* optional max width */
+    width: 80%;
+    max-width: 768px;        /* optional max width */
     margin: 0 auto;           /* center the container */
     padding: 1rem;            /* some padding around content */
   }
@@ -127,7 +136,6 @@ h2 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
-
 
   /* Footer styling (example) */
   footer {
